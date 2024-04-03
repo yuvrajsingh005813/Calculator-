@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> new calculator</title>
+  <link href="/mahanga calculator /pro calc.css" rel="stylesheet">
+  <!--Tab to edit-->
+  </link>
+</head>
+
+<body>
+  <div id="outlook">
+    <input id="result" readonly placeholder="ready to calculate...">
+    <!--Tab to edit-->
+    </input>
+    <div class="buttons">
+
+      <button id="b1" class="b-tn" onclick="display='';document.querySelector('#result').value= display;"><b>C</b></button>
+      <button class="b-tn" onclick="display=display + '1';document.querySelector('#result').value= display;">1</button>
+      <button class="b-tn" onclick="display=display + '2';document.querySelector('#result').value= display;">2</button>
+     
+      <button class="b-tn" onclick="display=display + '3';document.querySelector('#result').value= display;">3</button>
+      
+        <button id="b2" class="b-tn" onclick="display=display + '-';document.querySelector('#result').value= display;"><b>—</b></button>
+      <button class="b-tn" onclick="display=display + '4';document.querySelector('#result').value= display;">4</button>
+      <button class="b-tn" onclick="display=display + '5';document.querySelector('#result').value= display;">5</button>
+      <button class="b-tn" onclick="display=display + '6';document.querySelector('#result').value= display;">6</button>
+     
+      <button id="b3" class="b-tn" onclick="display=display + '*';document.querySelector('#result').value= display;"><b>×</b></button>
+      <button class="b-tn" onclick="display=display + '7';document.querySelector('#result').value= display;">7</button>
+  
+      <button class="b-tn" onclick="display=display + '8';document.querySelector('#result').value= display;">8</button>
+      <button class="b-tn" onclick="display=display + '9';document.querySelector('#result').value= display;">9</button>
+    
+      
+      <button id="b4" class="b-tn" onclick="display=display + '/';document.querySelector('#result').value= display;"><b>/</b></button>
+       <button id="b5" class="b-tn" onclick="display=display + '3.1415926535897';document.querySelector('#result').value= display;"><b>π</b></button>
+      <button class="b-tn" onclick="display=display + '0';document.querySelector('#result').value= display;">0</button>
+      <button  class="b-tn" onclick="display=display + '.';document.querySelector('#result').value= display;"><b>•</b></button>
+      <button class="b-tn" id="b6" onclick="display=display + '+';document.querySelector('#result').value= display;"><b></b>+</button>
+      <button id="equal" class="b-tn" onclick="display= eval(display);document.querySelector('#result').value= display;"><b>=</b></button>
+      </div>
+      
+    </div>
+    
+  <script>
+    let display = '';
+    document.querySelector('#result').value = display;
+  </script>
+
+</body>
+
+</html>
